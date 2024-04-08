@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consoㅣ</title>
+    
+    <h5><img src="https://cdn-icons-png.freepik.com/256/8425/8425341.png"
+        width="15" height="15">
+        이 콘솔에서 버튼을 누르면 세부 정보가 표시됩니다.<br>
+        세부 정보를 상호작용하면 원하는 페이지로 이동할 수 있습니다.
+        <hr>
+    </h5>
+    
+    <style>
+        .hidden {
+          display: none;
+        }
+    </style>
+        
+</head>
+<body>
+    <img src="https://cdn-icons-png.flaticon.com/512/1527/1527103.png"
+    width="180" height="180">
+
+    <article id="ABOUT ME">
+        <button onclick="toggleAboutMe()">ABOUT ME</button>
+    </article><br>
+        <ul id="AboutMe" class="hidden">
+            <li><a href="Name">이름</a></li>
+            <li><a href="Birth date">생년월일</a></li>
+            <li><a href="Address">주소지</a></li>
+            <li><a href="Contact">연락처</a></li>
+            <li><a href="E-mail">이메일</a></li>
+            <li><a href="Education">학력</a></li>
+        </ul>
+        <script>
+            function toggleAboutMe() {
+              var list = document.getElementById("AboutMe");
+              list.classList.toggle("hidden");
+            }
+        </script>
+        
+    
+    <hr>
+
+    <img src="https://cdn-icons-png.flaticon.com/512/5956/5956592.png"
+    width="180" height="180">
+    
+    <article id="MY PROJECT">
+        <button onclick="toggleMyProject()">MY PROJECT</button>
+    </article><br>
+</article><br>
+<ul id="MyProject" class="hidden">
+    <li><a href="2023 Second half">2023年 하반기</a></li>
+    <li><a href="2024 Winter vacation">2024年 겨울방학</a></li>
+    <li><a href="2024 first half">2024年 상반기</a></li>
+    <li><a href="2024 Summer Vacation">2024年 여름방학</a></li>
+    <li><a href="2024 Second half">2024年 하반기</a></li>
+    <li><a href="2025 Winter vacation">2025年 겨울방학</a></li>
+</ul>
+<script>
+    function toggleMyProject() {
+      var list = document.getElementById("MyProject");
+      list.classList.toggle("hidden");
+    }
+</script>
+
+
+    <article id="MY ASSIGNMENT">
+        <button onclick="toggleMyAssigment()">MY ASSIGNMENT</button>
+    </article><br>
+    <ul id="MyAssigment" class="hidden">
+        <li><a href="2023 2st semester">2023年 2학기</a></li>
+        <li><a href="2024 1st semester">2024年 1학기</a></li>
+        <li><a href="2024 2st semester">2024年 2학기</a></li>
+    </ul>
+    <script>
+        function toggleMyAssigment() {
+          var list = document.getElementById("MyAssigment");
+          list.classList.toggle("hidden");
+        }
+    </script>
+
+
+    <article id="ACTIVITY LOG">
+        <button onclick="toggleActivityLog()">ACTIVITY LOG</button>
+    </article><br>
+    <ul id="ActivityLog" class="hidden">
+        <li><a href="2023">2023年</a></li>
+        <li><a href="2024">2024年</a></li>
+        <li><a href="2025">2025年</a></li>
+    </ul>
+    <script>
+        function toggleActivityLog() {
+          var list = document.getElementById("ActivityLog");
+          list.classList.toggle("hidden");
+        }
+    </script>
+    
+
+    <hr>
+    <img src="https://cdn-icons-png.flaticon.com/512/1087/1087916.png"
+    width="180" height="180">
+
+    <article id="FEEDBACK">
+        <button onclick="toggleFeedback()">FEEDBACK</button>
+    </article><br>
+
+    <div id="feedbackText" class="hidden">
+        <p>피드백을 입력하세요:</p>
+        <textarea rows="4" cols="25"></textarea>
+        <br>
+        <button onclick="submitFeedback()">제출</button>
+    </div><br>
+
+    <script>
+        function toggleFeedback() {
+            var feedbackText = document.getElementById("feedbackText");
+            feedbackText.classList.toggle("hidden");
+        }
+        function submitFeedback() {
+            var feedback = document.querySelector("#feedbackText textarea").value;
+            console.log("제출된 피드백: " + feedback);
+        }
+    </script>
+
+    <article id="COMMUNICATIONS CHANNEL">
+        <button onclick="toggleCommunicationsChannel()">COMMUNICATIONS CHANNEL</button>
+    </article><br>
+    <ul id="CommunicationsChannel" class="hidden">
+        <li><a href="https://open.kakao.com/o/sKsJkMvc"target="_blank"><h5>https://open.kakao.com/o/sKsJkMvc</h5></a></li>
+        <li><h5>jaehong3624@gmail.com</h5></a></li>
+        <li><h5>010-4744-3622</h5></a></li>
+    </ul>
+    <script>
+        function toggleCommunicationsChannel() {
+          var list = document.getElementById("CommunicationsChannel");
+          list.classList.toggle("hidden");
+    }
+    </script>
+    
+
+
+   
+</body>
+</html>
